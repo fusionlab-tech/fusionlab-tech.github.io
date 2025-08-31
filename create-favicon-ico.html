@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Favicon.ico - FusionLab</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #6366f1;
+        }
+        .logo-preview {
+            margin: 20px 0;
+        }
+        .logo-preview img {
+            max-width: 100px;
+            height: auto;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+        .download-btn {
+            background: #6366f1;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px 10px;
+        }
+        .download-btn:hover {
+            background: #5a5fdb;
+        }
+        .instructions {
+            background: #e3f2fd;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            text-align: left;
+        }
+        .instructions h3 {
+            color: #1976d2;
+            margin-top: 0;
+        }
+        .status {
+            padding: 10px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        .status.success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔗 Create Favicon.ico</h1>
+        
+        <div class="logo-preview">
+            <h3>Your Logo</h3>
+            <img src="FusionLab-logo.png" alt="FusionLab Logo" id="logoPreview">
+        </div>
+
+        <div class="instructions">
+            <h3>📋 Instructions</h3>
+            <ol>
+                <li>Click "Generate Favicon.ico" below</li>
+                <li>Download the generated favicon.ico file</li>
+                <li>Place it in your project root directory</li>
+                <li>Your website will now show the favicon in browser tabs!</li>
+            </ol>
+        </div>
+
+        <button class="download-btn" onclick="generateFaviconIco()">Generate Favicon.ico</button>
+        
+        <div id="status" class="status" style="display: none;"></div>
+        
+        <p><strong>Note:</strong> This creates a 32x32 pixel favicon.ico file optimized for web browsers.</p>
+    </div>
+
+    <script>
+        let currentImage = null;
+
+        // Load logo when page loads
+        window.addEventListener('load', function() {
+            const img = new Image();
+            img.onload = function() {
+                currentImage = img;
+            };
+            img.src = 'FusionLab-logo.png';
+        });
+
+        // Generate favicon.ico
+        function generateFaviconIco() {
+            if (!currentImage) {
+                showStatus('Please wait for logo to load...', 'success');
+                return;
+            }
+
+            try {
+                // Create canvas for 32x32 favicon
+                const canvas = document.createElement('canvas');
+                canvas.width = 32;
+                canvas.height = 32;
+                const ctx = canvas.getContext('2d');
+
+                // Clear canvas
+                ctx.clearRect(0, 0, 32, 32);
+
+                // Calculate scaling to fit image within canvas while maintaining aspect ratio
+                const scale = Math.min(32 / currentImage.width, 32 / currentImage.height);
+                const scaledWidth = currentImage.width * scale;
+                const scaledHeight = currentImage.height * scale;
+
+                // Center the image
+                const x = (32 - scaledWidth) / 2;
+                const y = (32 - scaledHeight) / 2;
+
+                // Draw image
+                ctx.drawImage(currentImage, x, y, scaledWidth, scaledHeight);
+
+                // Convert to blob and download
+                canvas.toBlob(function(blob) {
+                    const url = URL.createObjectURL(blob);
+                    const link = document.createElement('a');
+                    link.href = url;
+                    link.download = 'favicon.ico';
+                    link.click();
+                    URL.revokeObjectURL(url);
+                    showStatus('Favicon.ico generated successfully!', 'success');
+                }, 'image/png');
+
+            } catch (error) {
+                showStatus('Error generating favicon: ' + error.message, 'error');
+            }
+        }
+
+        // Show status message
+        function showStatus(message, type) {
+            const status = document.getElementById('status');
+            status.textContent = message;
+            status.className = `status ${type}`;
+            status.style.display = 'block';
+            
+            setTimeout(() => {
+                status.style.display = 'none';
+            }, 5000);
+        }
+    </script>
+</body>
+</html>
