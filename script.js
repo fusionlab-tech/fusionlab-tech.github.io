@@ -13,7 +13,7 @@ const translations = {
         
         // Hero Section
         'We Create Digital Experiences That Matter': 'We Create Digital Experiences That Matter',
-        'FusionLab is a creative digital Company specializing in web and mobile design, branding, and digital innovation. We transform ideas into powerful digital solutions.': 'FusionLab is a creative digital Company specializing in web and mobile design, branding, and digital innovation. We transform ideas into powerful digital solutions.',
+        'FusionLab Technology is a technology company specialized in developing innovative digital solutions.': 'FusionLab Technology is a technology company specialized in developing innovative digital solutions.',
         'View Our Work': 'View Our Work',
         'Get In Touch': 'Get In Touch',
         
@@ -21,8 +21,8 @@ const translations = {
         'About FusionLab': 'About FusionLab',
         'We\'re a team of creative professionals passionate about digital innovation': 'We\'re a team of creative professionals passionate about digital innovation',
         'Our Story': 'Our Story',
-        'Founded in 2020, FusionLab has been at the forefront of digital transformation, helping businesses of all sizes establish their online presence and achieve their digital goals.': 'Founded in 2020, FusionLab has been at the forefront of digital transformation, helping businesses of all sizes establish their online presence and achieve their digital goals.',
-        'We believe in the power of creative thinking, technical excellence, and strategic insight to deliver solutions that not only look great but drive real business results.': 'We believe in the power of creative thinking, technical excellence, and strategic insight to deliver solutions that not only look great but drive real business results.',
+        'Founded in 2023, We focus on creating personalized websites, applications and interfaces, combining modern design with high performance.': 'Founded in 2023, We focus on creating personalized websites, applications and interfaces, combining modern design with high performance.',
+        "Our mission is to transform ideas into impactful digital experiences, using cutting-edge technologies and a collaborative approach to deliver results that exceed our clients' expectations. At FusionLab, we believe that the fusion of creativity and technology is the key to shaping the future.": "Our mission is to transform ideas into impactful digital experiences, using cutting-edge technologies and a collaborative approach to deliver results that exceed our clients' expectations. At FusionLab, we believe that the fusion of creativity and technology is the key to shaping the future.",
         'Projects Completed': 'Projects Completed',
         'Happy Clients': 'Happy Clients',
         'Years Experience': 'Years Experience',
@@ -81,7 +81,7 @@ const translations = {
         
         // Hero Section
         'We Create Digital Experiences That Matter': 'Creamos Experiencias Digitales Que Importan',
-        'FusionLab is a creative digital Company specializing in web and mobile design, branding, and digital innovation. We transform ideas into powerful digital solutions.': 'FusionLab es una agencia digital creativa especializada en diseño web y móvil, branding e innovación digital. Transformamos ideas en poderosas soluciones digitales.',
+        'FusionLab Technology is a technology company specialized in developing innovative digital solutions.': 'FusionLab Technology es una empresa tecnológica especializada en el desarrollo de soluciones digitales innovadoras.',
         'View Our Work': 'Ver Nuestro Trabajo',
         'Get In Touch': 'Ponerse en Contacto',
         
@@ -89,8 +89,8 @@ const translations = {
         'About FusionLab': 'Acerca de FusionLab',
         'We\'re a team of creative professionals passionate about digital innovation': 'Somos un equipo de profesionales creativos apasionados por la innovación digital',
         'Our Story': 'Nuestra Historia',
-        'Founded in 2020, FusionLab has been at the forefront of digital transformation, helping businesses of all sizes establish their online presence and achieve their digital goals.': 'Fundado en 2020, FusionLab ha estado a la vanguardia de la transformación digital, ayudando a empresas de todos los tamaños a establecer su presencia en línea y lograr sus objetivos digitales.',
-        'We believe in the power of creative thinking, technical excellence, and strategic insight to deliver solutions that not only look great but drive real business results.': 'Creemos en el poder del pensamiento creativo, la excelencia técnica y la visión estratégica para entregar soluciones que no solo se ven bien, sino que impulsan resultados comerciales reales.',
+        'Founded in 2023, We focus on creating personalized websites, applications and interfaces, combining modern design with high performance.': 'Fundada en 2023, nos enfocamos en crear sitios web, aplicaciones e interfaces personalizados, combinando un diseño moderno con alto rendimiento.',
+        "Our mission is to transform ideas into impactful digital experiences, using cutting-edge technologies and a collaborative approach to deliver results that exceed our clients' expectations. At FusionLab, we believe that the fusion of creativity and technology is the key to shaping the future.": "Nuestra misión es transformar ideas en experiencias digitales impactantes, utilizando tecnologías de vanguardia y un enfoque colaborativo para lograr resultados que superen las expectativas de nuestros clientes. En FusionLab, creemos que la fusión de creatividad y tecnología es la clave para forjar el futuro.",
         'Projects Completed': 'Proyectos Completados',
         'Happy Clients': 'Clientes Felices',
         'Years Experience': 'Años de Experiencia',

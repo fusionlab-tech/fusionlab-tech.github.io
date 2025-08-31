@@ -12,8 +12,8 @@ html {
 body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
-    color: #f9fafb;
-    background: #0f172a;
+    color: #333;
+    background: #ffffff;
     overflow-x: hidden;
 }
 
@@ -28,12 +28,12 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(15, 23, 42, 0.98);
-    backdrop-filter: blur(15px);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 1rem 0;
     transition: all 0.3s ease;
-    border-bottom: 1px solid rgba(51, 65, 85, 0.3);
+    border-bottom: 1px solid rgba(229, 231, 235, 0.3);
 }
 
 /* Language Switcher */
@@ -45,8 +45,8 @@ body {
 
 .lang-btn {
     background: transparent;
-    border: 2px solid #60a5fa;
-    color: #60a5fa;
+    border: 2px solid #2563eb;
+    color: #2563eb;
     padding: 0.5rem 1rem;
     border-radius: 6px;
     font-weight: 600;
@@ -56,13 +56,13 @@ body {
 }
 
 .lang-btn:hover {
-    background: #60a5fa;
-    color: #0f172a;
+    background: #2563eb;
+    color: white;
 }
 
 .lang-btn.active {
-    background: #60a5fa;
-    color: #0f172a;
+    background: #2563eb;
+    color: white;
 }
 
 .nav-container {
@@ -79,6 +79,26 @@ body {
     align-items: center;
 }
 
+.nav-logo h2 {
+    color: #2563eb;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: -0.5px;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    text-transform: none;
+    background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: all 0.3s ease;
+}
+
+.nav-logo h2:hover {
+    transform: scale(1.05);
+    filter: brightness(1.1);
+}
+
 .logo-image {
     height: 40px;
     width: auto;
@@ -93,13 +113,13 @@ body {
 
 .nav-menu a {
     text-decoration: none;
-    color: #f9fafb;
+    color: #333;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .nav-menu a:hover {
-    color: #60a5fa;
+    color: #2563eb;
 }
 
 .hamburger {
@@ -111,7 +131,7 @@ body {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background: #f9fafb;
+    background: #333;
     margin: 3px 0;
     transition: 0.3s;
 }
@@ -242,12 +262,12 @@ body {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: #f9fafb;
+    color: #1f2937;
 }
 
 .section-header p {
     font-size: 1.1rem;
-    color: #cbd5e1;
+    color: #6b7280;
     max-width: 600px;
     margin: 0 auto;
 }
@@ -255,7 +275,7 @@ body {
 /* About Section */
 .about {
     padding: 80px 0;
-    background: #1e293b;
+    background: #f9fafb;
 }
 
 .about-content {
@@ -268,12 +288,12 @@ body {
 .about-text h3 {
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
-    color: #f9fafb;
+    color: #1f2937;
 }
 
 .about-text p {
     margin-bottom: 1.5rem;
-    color: #cbd5e1;
+    color: #4b5563;
     font-size: 1.1rem;
 }
 
@@ -296,13 +316,13 @@ body {
 }
 
 .stat p {
-    color: #cbd5e1;
+    color: #6b7280;
     font-size: 0.9rem;
 }
 
 .team-illustration {
     height: 400px;
-    background: linear-gradient(135deg, #1e40af 0%, #3730a3 100%);
+    background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
     border-radius: 20px;
     position: relative;
     overflow: hidden;
@@ -333,7 +353,6 @@ body {
 /* Services Section */
 .services {
     padding: 80px 0;
-    background: #0f172a;
 }
 
 .services-grid {
@@ -343,12 +362,12 @@ body {
 }
 
 .service-card {
-    background: #1e293b;
+    background: white;
     padding: 2rem;
     border-radius: 16px;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
-    border: 1px solid #334155;
+    border: 1px solid #e5e7eb;
 }
 
 .service-card:hover {
@@ -375,18 +394,18 @@ body {
 .service-card h3 {
     font-size: 1.3rem;
     margin-bottom: 1rem;
-    color: #f9fafb;
+    color: #1f2937;
 }
 
 .service-card p {
-    color: #cbd5e1;
+    color: #6b7280;
     line-height: 1.6;
 }
 
 /* Portfolio Section */
 .portfolio {
     padding: 80px 0;
-    background: #1e293b;
+    background: #f9fafb;
 }
 
 .portfolio-grid {
@@ -548,7 +567,6 @@ body {
 /* Contact Section */
 .contact {
     padding: 80px 0;
-    background: #0f172a;
 }
 
 .contact-content {
@@ -587,21 +605,21 @@ body {
 
 .contact-item h4 {
     margin-bottom: 0.5rem;
-    color: #f9fafb;
+    color: #1f2937;
 }
 
 .contact-item p {
-    color: #cbd5e1;
+    color: #6b7280;
 }
 
 .contact-item p a {
-    color: #60a5fa;
+    color: #2563eb;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .contact-item p a:hover {
-    color: #93c5fd;
+    color: #1d4ed8;
     text-decoration: underline;
 }
 
@@ -615,28 +633,28 @@ body {
 .form-group textarea {
     width: 100%;
     padding: 1rem;
-    border: 2px solid #334155;
+    border: 2px solid #e5e7eb;
     border-radius: 8px;
     font-size: 1rem;
-    background: #1e293b;
-    color: #f9fafb;
+    background: white;
+    color: #333;
     transition: border-color 0.3s ease;
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #60a5fa;
+    border-color: #2563eb;
 }
 
 .form-group input::placeholder,
 .form-group textarea::placeholder {
-    color: #64748b;
+    color: #9ca3af;
 }
 
 /* Footer */
 .footer {
-    background: #020617;
+    background: #1f2937;
     color: white;
     padding: 60px 0 20px;
 }
@@ -686,7 +704,7 @@ body {
 .social-links a {
     width: 50px;
     height: 50px;
-    background: #1e293b;
+    background: #374151;
     border-radius: 50%;
     display: flex;
     align-items: center;
